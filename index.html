@@ -1,0 +1,385 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="css/style.css">
+ 	<title>Kid's Territory Landing Page</title>
+ </head>
+ <body>
+ <div class="contaner-fluid">
+ <!-- BEGIN HEADER -->
+ <div class="top">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="#about-us">About</a></li>
+        <li ><a href="#methods">Methodology</a></li>
+        <li ><a href="#gallery">Gallery</a><li>
+        <li ><a href="#teachers">Teachers</a></li>
+        <li ><a href="#prices">Prices</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right" id="socialIcons">
+        <li><a href="#"><img src="img/png/twitter.png" width="20"></a></li>
+        <li><a href="#"><img src="img/png/facebook.png" width="20"></a></li>
+        <li><a href="#"><img src="img/png/google-plus.png" width="20"></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ <!-- Slider -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img data-src="holder.js/1600x1200/auto/text:First slide" alt="First slide"  src="img/png/slider/sliderItem1.png">
+        <div class="carousel-caption"></div>
+    </div>
+    <div class="item">
+        <img src="img/png/slider/sliderItem2.png" alt="item2">
+      <div class="carousel-caption"></div>
+    </div>
+    <div class="item">
+        <img src="img/png/slider/sliderItem3.png" alt="item3">
+      <div class="carousel-caption"></div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<!-- End of Slider -->
+</div><!-- /.top-->
+ <!-- END HEADER -->
+
+<!-- BEGIN CONTENT -->
+<div id="about-us">
+  <div class="container-fluid inner">
+    <h2>About us</h2>
+    <div class="row">
+    	<div class="col-xs-6 col-md-4">
+    	<img src="img/png/icons/128px/documents_128px.png" class="about" alt="icon">
+    	<h3>Qualifications</h3>
+			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    	<img src="img/png/icons/128px/tools_128px.png" class="about" alt="icon">
+    	<h3>Practise</h3>
+    	<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+    	<div class="col-xs-12 col-md-4">
+    	<img src="img/png/icons/128px/gears_128px.png" class="about" alt="icon">
+    	<h3>How it works</h3>
+    	<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+      </div>
+  </div> <!--  end div.container -->
+</div> <!--  end section#about-us -->
+
+<div id="methods">
+  <div class="container-fluid">
+    <h2>Methodology</h2>
+    <div class="col-md-4">
+    <div class="subscribe">
+    <h2>Subscribe for a free lesson</h2>
+      <form role="form" action="contacts.php" method="pos">
+        <div class="form-group">
+        <p>Accept our invitation to come to a free lesson and try it yourself!
+        </p>
+          <input type="name" class="form-control" id="name" placeholder="Enter your name">
+          <p></p>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    </div>
+    <div class="col-md-8">
+      <div class="vid">
+      <video width="650" height="450" controls>
+        <source src="video/Envato_Studio.mp4" type="video/mp4">
+        <source src="video/EnvatoStudio.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+        
+      </div>
+    </div>
+  </div>
+</div> <!--  end section#methods -->
+
+<div id="gallery">
+  <div class="container-fluid">
+  <h2>Gallery</h2>
+	<div class="row">
+		<div class="col-md-3 col-sm-4 col-xs-6">
+		  <img class="img-responsive" src="img/jpg/gallery/balloons.jpg" alt="photos">
+		</div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img class="img-responsive" src="img/jpg/gallery/school-boy.jpg" alt="photos">
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img class="img-responsive" src="http://blog.arborday.org/wp-content/uploads/2013/02/NEC1-300x200.jpg" alt="photos">
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img class="img-responsive" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" alt="photos"></div>
+	</div>
+  <div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6">
+    	  <img class="img-responsive" src="http://www.imcreator.com/wp-content/uploads/2013/09/6228564395_2cab341d9e_b.jpg" alt="photos">
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+        <img class="img-responsive" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" alt="photos">
+      </div>
+	  <div class="col-md-3 col-sm-4 col-xs-6">
+	    <img class="img-responsive" src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" alt="photos">
+	  </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+      <img class="img-responsive" src="http://blog.arborday.org/wp-content/uploads/2013/02/NEC1-300x200.jpg" alt="photos"/>
+    </div>
+  </div>
+</div>
+</div> <!--  end section#gallery -->
+
+<div id="teachers">
+  <div class="container-fluid">
+  <h2>Our Teachers</h2>
+    <div class="row">
+      <div class="col-md-2 hvr-bounce-in">
+        <img src="img/jpg/teacher1.jpg" alt="teacher1"/>
+      </div>
+      <div class="col-md-4">
+        <h4>Name and Last Name, age</h4>
+        <p>Describe the experience of a teacher and his achievements!</p>
+      </div>
+      <div class="col-md-2 hvr-bounce-in">
+        <img src="img/jpg/teacher2.jpg" alt="teacher2"/>
+      </div>
+      <div class="col-md-4">
+        <h4>Name and Last Name, age</h4>
+        <p>Describe the experience of a teacher and his achievements!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 hvr-bounce-in">
+        <img src="img/jpg/teacher3.jpg" alt="teacher3"/>
+      </div>
+      <div class="col-md-4">
+        <h4>Name and Last Name, age</h4>
+        <p>Describe the experience of a teacher and his achievements!</p>
+      </div>
+      <div class="col-md-2 hvr-bounce-in">
+        <img src="img/jpg/teacher4.jpg" alt="teacher4"/>
+      </div>
+      <div class="col-md-4">
+        <h4>Name and Last Name, age</h4>
+        <p>Describe the experience of a teacher and his achievements!</p>
+      </div>
+    </div>
+  </div>
+</div> <!--  end section#teachers -->
+
+<section id="prices">
+  <div class="container">
+  <h2>Pricing Plans</h2>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Lesson</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>$10<span class="subscript">/lesson</span></h1>
+                        <small>First trial lesson FREE</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>Pay for the lessons you visit</td>
+                        </tr>
+                        <tr class="active">
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <td>French</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Maths</td>
+                        </tr>
+                        <tr>
+                            <td>Reading</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Drama (inc. dancing & singing)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
+                    First trial lesson FREE</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-success">
+                <div class="cnrflash">
+                    <div class="cnrflash-inner">
+                        <span class="cnrflash-label">MOST
+                            <br>
+                            POPULR</span>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">Half A Day</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>$120<span class="subscript">/week</span></h1>
+                        <small>First trial lesson FREE</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>Pay for half of the day (3 lessons a day)</td>
+                        </tr>
+                        <tr class="active">
+                            <td>English (3 lessons)</td>
+                        </tr>
+                        <tr>
+                            <td>French (2 lessons)</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Maths (3 lessons)</td>
+                        </tr>
+                        <tr>
+                            <td>Reading (2 lessons)</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Drama (5 lessons)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>First trial lesson FREE</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">All Day</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>$230<span class="subscript">/week</span></h1>
+                        <small>First trial lesson FREE</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>Pay for all day + lunch + 2 snacks</td>
+                        </tr>
+                        <tr class="active">
+                            <td>English (every day)</td>
+                        </tr>
+                        <tr>
+                            <td>French (every day)</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Maths (every day)</td>
+                        </tr>
+                        <tr>
+                            <td>Reading (every day)</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Drama (every day)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> First trial lesson FREE</div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section> <!--  end section#prices -->
+
+<div id="reviews">
+  <div class="container-fluid">
+    
+  </div>
+</div> <!--  end section#reviews -->
+<div class="btn-wrapper">
+<div id="btn-sign-in">
+  <div class="container-fluid">
+  <div class="col-xs-6 col-md-4">
+        <div class="subscribe">
+    <h2>Subscribe for a free lesson</h2>
+      <form role="form" action="contacts.php" method="pos">
+        <div class="form-group">
+          <input type="name" class="form-control" id="name1" placeholder="Enter your name">
+          <p></p>
+          <input type="email" class="form-control" id="email1" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+   </div>
+  </div>
+</div>
+</div><!--  end section#btn-sign-in -->
+</div>
+<footer>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6 col-md-4">
+      <a href="index.html"><img src="img/png/Logo-green.png" width="250" class="logo"></a>
+      </div>
+        <div class="col-xs-6 col-md-4">
+        <h4>Content</h4>
+        <ul class="footer-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Methodology</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Teachers</a></li>
+        </ul>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <h4>Contacts</h4>
+            <p>Follow us on social networks</p>
+          <a href="#"><img src="img/png/twitter.png" width="32"></a>
+          <a href="#"><img src="img/png/facebook.png" width="32"></a>
+          <a href="#"><img src="img/png/google-plus.png" width="32"></a>
+        </div>
+       </div>
+    </div>
+</footer>
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+   <!-- <script src="js/jquery-2.1.1.js"></script> -->
+
+ </body>
+ </html>

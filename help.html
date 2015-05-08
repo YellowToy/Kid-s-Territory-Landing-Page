@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="css/style.css">
+ 	<title>Help</title>
+ 	<style>
+ 	  .main{
+ 	    margin-top: 40px;
+ 	  }
+ 	</style>
+ </head>
+ <body>
+   <div class="page-container">
+  
+	<!-- top navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div class="container">
+    	<div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">Help page</a>
+    	</div>
+      <h3>"Kid's Territory Landing Page" Documentation by Julia Toya v1.0</h3>
+       </div>
+    </div>
+      
+    <div class="container main">
+      <div class="row row-offcanvas row-offcanvas-left">
+        
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <ul class="nav">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#html_structure">HTML Structure</a></li>
+              <li><a href="#css_structure">CSS Structure</a></li>
+              <li><a href="#javascript">JavaScript</a></li>
+              <li><a href="#credits">Sources and Credits</a></li>
+              <li><a href="#php">PHP Code Explanation</a></li>
+              <li><a href="#assets">Assets</a></li>
+            </ul>
+        </div>
+  	
+        <!-- main area -->
+        <div   class="col-xs-12 col-sm-9">
+        <div id="home" class="col-xs-12 col-sm-9">
+        <h1 >Kid's Territory Landing Page</h1>
+          <p>
+          Created: 13/04/2015<br>
+          By: Julia Toya<br>
+          Email: <a href="mailto:juliatoya@ukr.net">juliatoya@ukr.net</a>
+          </p>
+    
+          <p class="prepend-top append-0">Thank you for purchasing my landing page. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/YellowToy">here</a>. Thanks so much!</p>
+    
+        </div>
+          <div id="html_structure" class="col-xs-12 col-sm-9">
+          <h4 id="htmlStructure"><strong>HTML Structure</strong></h4>
+            <p>This landing page is a flexible layout with three columns built using framework Bootstrap 3.x. All of the information within the main content area is nested within a div with an class of "contaner-fluid". All the next code divided into sections using div with id names "about-us", "methods", "gallery", "teachers", "prices". The general template structure is the same throughout the template. Here is the general structure.</p>
+           <!-- screenshot of a code
+           <img src="" alt="HTML Structure">
+           -->
+            <p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+              <pre> #primaryContent a {
+                  color: #someColor;
+                }
+              </pre>
+
+            <p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+            <p>I.E.</p>
+
+              <pre> #wrap #primaryContent a {
+                  color: #someColor;
+                }
+              </pre>
+
+            <p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p>
+            <p><a href="#home">Top</a></p>
+
+        </div>
+        <div id="css_structure" class="col-xs-12 col-sm-9">
+          <h4 id="css_structure"><strong>CSS Structure</strong></h4>
+            <p>I'm using two CSS files in this landing page. The first one is a bootstrap file. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p>
+            <p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>
+
+              <pre> /* === Header Section === */
+
+                some code
+
+                /* === Slider === */
+                
+                some code
+                
+                /* === About === */
+                
+                some code
+                
+                /* === Methods === */
+                
+                some code
+                
+                etc, etc.
+              </pre>
+    
+            <p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+
+            <p>For instance, if you would like to edit the display of these images, find the following section in the style sheet:</p>
+              <pre> #gallery img {
+                  change styles here:
+                }
+              </pre>
+            <p><a href="#home">Top</a></p>
+        </div>
+        <div id="javascript" class="col-xs-12 col-sm-9">
+          <h4 id="javascript"><strong>JavaScript</strong></h4>
+          <p>This landing page imports three Javascript files.</p>
+            <ol>
+              <li>jQuery.min.js</li>
+              <li>App.js</li>
+              <li>Bootstrap.js</li>
+            </ol>
+              <ol>
+                <li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+                <li>Most of the animation in this site is carried out with the help of css rules. But I use some custom scrips for several animations. There are a few functions written in Javascript.
+          <pre>
+        $('.carousel').carousel({
+        interval: 2000  //this the speed of slides at the top of the page. The bigger number is, the slower slides would change.//
+        });
+        // eventhandler for icons at the section 'About us'//
+        $(".about").mouseenter(function(){
+        $(".about").fadeTo( "slow" , 0.5);
+        });
+
+        $(".about").mouseleave(function(){
+        $(".about").fadeTo( "slow" , 1);
+        });
+          </pre>
+                </li>
+                <li>In addition to the custom scripts, I implement Bootstrap scripts for this site. Usually you don't need to change them.
+                </li>
+              </ol>
+        <p><a href="#home">Top</a></p>
+        </div>
+        <div id="credits" class="col-xs-12 col-sm-9">
+          <h4><strong>Sources and Credits</strong></h4>
+          <p>All the pictures and icons used in this site are taken from free photo banks with allowence to use them for commercial purposes.</p>
+          <p><a href="#home">Top</a></p>
+        </div>
+        <div id="php" class="col-xs-12 col-sm-9">
+          <h4><strong>PHP Code Explanation</strong></h4>
+          <p>From php code I use only contact.php for running the subscription form. Although the file includes all the code with comments, I will explain some main points you would like to adjust.</p>
+          <pre>
+            /* Set e-mail recipient */
+            $myemail  = "you@domain.com";
+
+            /* Let's prepare the message for the e-mail */
+            $message = "Hello!
+
+            Your contact form has been submitted by:
+            Name: $name
+            E-mail: $email
+
+            End of message
+            ";
+          </pre>
+          <p>For changing the recipient email you change the line $myemail  = "you@domain.com" and change the value for desired email.</p>
+          <p>If you want to change the text of a message, you go to the variable $message and put your text as you want them to look like. Pay attention to the "" signs. All your message should go between them.</p>
+          <p><a href="#home">Top</a></p>
+        </div>
+        <div id="assets" class="col-xs-12 col-sm-9">
+          <h4><strong>Assets</strong></h4>
+          <p>In the website folder a number of other forders: css, fonts, img, js and video.</p>
+          <h5><b>'Fonts' and 'Video' Folders</b></h5>
+          <p>Folders 'fonts' and 'video' shouldn't be a problem. They contain only those fonts and video I use in the site.</p>
+          <p>If you like to change fonts I suggest you go to style.css and change the direcotry for them at the very beginning of a document. I prefer Google fonts.</p>
+          <pre>
+            @import url(http://fonts.googleapis.com/css?family=Pacifico);
+            @import url(http://fonts.googleapis.com/css?family=Lora);
+          </pre>
+          <p>For changing video you go to index.html and change directory (src) there too. Pay attention to the type of your video. Not all browsers suppor all types of video.</p>
+          <pre>
+          source src="video/Envato_Studio.mp4" type="video/mp4"
+          </pre>
+          <h5><b>'Img' Folder</b></h5>
+          <p>In this site I use imagines of two types .jpg and .png. The folders are named accordingly.</p>
+          <p><em>'Jpg' folder</em></p>
+          <p>This folder containes pictures for #gallery and for #teachers. Please, pay attention that gallery pictures are partially taken from the internet intentionally to show you both working ways of placing images.</p>
+          <p>Here you can also find folder named 'optional' with free pictures for use. All the pictures are taken from free photo stocks and are avaliable for personal and commercial use.</p>
+          <p><em>'Png' folder</em></p>
+          <p>This folder contains prepared images for slider, icons for #about section, social icons and some icons for your taste.</p>
+          <p>You are free to use them all.</p>
+          <p><a href="#home">Top</a></p>
+        </div>
+        
+        </div><!-- /.col-xs-12 main -->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.page-container-->
+<footer>
+<p style="padding-top: 20px; text-align: center;">Once again thank you for purchasing this landing page.</p>
+</footer><!-- /.footer -->
+ </body>
+</html>

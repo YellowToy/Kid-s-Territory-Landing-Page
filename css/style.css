@@ -1,0 +1,320 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Lora);
+html{
+  width : 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  padding-top: 30px;
+  font-family: 'Lora', serif;
+  display: block;
+}
+h2{
+  font-size: 50px;
+}
+ h2,h3{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: 10px;
+}
+
+/* Header */
+.top{
+  padding: 0;
+  margin: 0;
+}
+#socialIcons li img {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/* Slider */
+
+/* About */
+#about-us{
+  background: white;
+  padding-bottom: 30px;
+  
+}
+.about {
+  position: relative;
+  left: 40%;
+  width: 64px;
+  height: 64px;
+}
+.hvr-shadow-radial {
+  display: inline;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-shadow-radial:before, .hvr-shadow-radial:after {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  height: 5px;
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.hvr-shadow-radial:before {
+  bottom: 100%;
+  background: -webkit-radial-gradient(50% 150%, ellipse, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+}
+.hvr-shadow-radial:after {
+  top: 100%;
+  background: -webkit-radial-gradient(50% -50%, ellipse, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+}
+.hvr-shadow-radial:hover:before, .hvr-shadow-radial:focus:before, .hvr-shadow-radial:active:before, .hvr-shadow-radial:hover:after, .hvr-shadow-radial:focus:after, .hvr-shadow-radial:active:after {
+  opacity: 1;
+}
+
+/* Methods */
+#methods{
+  background-color: #e6e6e6;
+  overflow:hidden;
+  width: auto;
+  height: 500px;
+ 
+}
+#methods .subscribe{
+  position: relative;
+  margin-top: 20%;
+  
+}
+#methods p{
+  text-align: center;
+}
+
+#methods video {
+  padding-bottom: 50px;
+}
+.subscribe {
+  position: relative;
+  left: 10%;
+}
+
+/* Teachers */
+#teachers {
+  background-color: #e6e6e6;
+}
+#teachers .row {
+  padding: 30px;
+}
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* prices */
+#prices{
+  padding: 20px;
+}
+.panel{
+  text-align: center;
+}
+.panel:hover { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35); }
+.panel-body
+{
+    padding: 0px;
+    text-align: center;
+}
+
+.the-price
+{
+    background-color: rgba(220,220,220,.17);
+    box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+.the-price h1
+{
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.subscript
+{
+    font-size: 25px;
+}
+
+/* CSS-only ribbon styles    */
+.cnrflash
+{
+    /*Position correctly within container*/
+    position: absolute;
+    top: -9px;
+    right: 4px;
+    z-index: 1; /*Set overflow to hidden, to mask inner square*/
+    overflow: hidden; /*Set size and add subtle rounding  		to soften edges*/
+    width: 100px;
+    height: 100px;
+    border-radius: 3px 5px 3px 0;
+}
+.cnrflash-inner
+{
+    /*Set position, make larger then 			container and rotate 45 degrees*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 145px;
+    height: 145px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -o-transform: rotate(45deg); /* Opera */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    -webkit-transform-origin: 100% 100%; /*Purely decorative effects to add texture and stuff*/ /* Safari and Chrome */
+    -ms-transform-origin: 100% 100%;  /* IE 9 */
+    -o-transform-origin: 100% 100%; /* Opera */
+    -moz-transform-origin: 100% 100%; /* Firefox */
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.1) 50%), linear-gradient(0deg, transparent 0%, rgba(1,1,1,.2) 50%);
+    background-size: 4px,auto, auto,auto;
+    background-color: #aa0101;
+    box-shadow: 0 3px 3px 0 rgba(1,1,1,.5), 0 1px 0 0 rgba(1,1,1,.5), inset 0 -1px 8px 0 rgba(255,255,255,.3), inset 0 -1px 0 0 rgba(255,255,255,.2);
+}
+.cnrflash-inner:before, .cnrflash-inner:after
+{
+    /*Use the border triangle trick to make  				it look like the ribbon wraps round it's 				container*/
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border: 8px solid #800000;
+}
+.cnrflash-inner:before
+{
+    left: 1px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.cnrflash-inner:after
+{
+    right: 0;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.cnrflash-label
+{
+    /*Make the label look nice*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(1,1,1,.8);
+    font-size: 0.95em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* gallery */
+ #gallery img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+}
+
+#gallery img:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+ }
+ #gallery{
+  padding: 30px;
+}
+
+/* Video */
+.vid {
+    position: relative;
+    left: 20%;
+    padding-bottom: 56.25%;
+    
+    height: 0; overflow: hidden;
+}
+ 
+.vid iframe,
+.vid object,
+.vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sing-in button */
+.btn-wrapper{
+  background-color: #e6e6e6;
+  width: 100%;
+}
+#btn-sign-in {
+  position:relative;
+  left: 30%;
+  padding-bottom: 30px;
+
+}
+button {
+  position: relative;
+   left: 38%;
+}
+
+/* Footer */
+footer {
+  width: auto;
+  height: auto;
+  background: black;
+  padding-bottom: 20px;
+}
+.logo{
+  position: relative;
+  left: 20% ;
+}
+.footer-nav > li > a{
+  color: #7eff70;
+}
+ul.footer-nav{
+  list-style: outside none;
+}
+footer p, footer h4{
+  display: block;
+  color: white;
+}
